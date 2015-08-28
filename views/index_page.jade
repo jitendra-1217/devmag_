@@ -1,0 +1,25 @@
+html
+    head
+        title #{title} | devmag_
+
+        block header
+            link(rel='stylesheet', href='/css/common.css')
+
+    body
+        block container
+            h3 Requirements:
+            ul
+                li Redis
+                li Mongodb
+                li nodeJs
+            h3 Setup instructions:
+            ul
+                li &lt;<b>bower install</b>&gt;
+                li &lt;<b>npm install&gt;</b>
+                li To populate posts collection with sample data - <br />&lt;<b>mongoimport -d dbname -c posts --type csv --file &lt;devmag_ folder&gt;/fixtures/posts.csv --headerline&gt;</b>
+                li Edit config in &lt;configs/config.js&gt;
+
+            h3 Browse:
+            ul
+                li &lt;host&gt;:&lt;port&gt;/posts
+                li Github repo:

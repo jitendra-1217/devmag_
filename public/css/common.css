@@ -1,0 +1,47 @@
+body {
+    background-color: white;
+    font-family: 'Courier New';
+    font-size: 12px;
+    width: 800px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+textarea {
+    font-family: 'Courier New';
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+div#post_listings_view, div#post_detail_view {
+
+    padding: 10px;
+}
+
+div.post_detail {
+    padding: 10px;
+    border: 1px solid lightgrey;
+    margin-bottom: 5px;
+}
+
+a.post_link {
+    text-decoration: none;
+    color: black;
+}
+
+a.post_link:hover {
+    color: black;
+}
+
+a.post_link:active {
+    color: black;
+}
+
+span.post_author_name_label {
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+div.post_content {
+    margin-top: 5px;
+}

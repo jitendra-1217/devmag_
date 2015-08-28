@@ -1,0 +1,20 @@
+
+extends ./master_layout
+
+block append header
+    script(src='/channel/bcsocket.js')                  //  socket.io alternative in use by sharejs
+    script(src='/share/share.uncompressed.js')          //  sharejs libraries
+    script(src='/share/textarea.js')
+    script(src='/js/sync_comment.js')                   //  Code implenting sharejs library
+
+block container
+    h3 Detail of post
+    a(href='javascript:history.back()') &larr; Back
+    div(id='post_detail_view')
+        div(class='post_author_name_view')
+            span(class='post_author_name_label') Author name:
+            span(class='post_author_name_text') #{post.author}
+        div(class='post_content') #{post.post}
+    textarea(id='comment_textarea', data-channel_name='comment_textarea_' + post.id, placeholder='Enter your comment here..',
+            rows='10', cols='50')
+    //- data-channel_name holds uniuqe identifier for this comment box, currently no user auth so unique by (post_id) otherwise should use (post_id, user_id)

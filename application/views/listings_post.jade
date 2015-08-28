@@ -1,0 +1,19 @@
+
+extends ./master_layout
+
+block append header
+
+block container
+    h3 Listings of all posts
+    div(id='post_listings_view')
+        each post in posts
+            a(href=base_url + '/posts/#{post.id}', class='post_link')
+                div(class='post_detail')
+                    div(class='post_author_name_view')
+                        span(class='post_author_name_label') Author name:
+                        span(class='post_author_name_text') #{post.author}
+                    div(class='post_content') #{post.post}
+
+    //- No results case
+    if (posts.length == 0)
+        include ./no_results

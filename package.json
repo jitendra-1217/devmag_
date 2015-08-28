@@ -1,0 +1,19 @@
+{
+  "name": "devmag_",
+  "version": "1.0.0",
+  "description": "Solution to problem statement - devmag_",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jitendra K Ojha",
+  "repository": {},
+  "dependencies": {
+    "express": "4.*",
+    "nodemon": "1.4.1",
+    "jade": "~1.11.0",
+    "mongoose": "4.1.3",
+    "redis": "0.12.*",
+    "share": "0.6.*"
+  }
+}
