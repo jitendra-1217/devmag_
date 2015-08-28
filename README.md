@@ -16,3 +16,8 @@
 ###### Browse:
 * `host:port/posts` - Listings of posts
 * `host:port/`      - Index page with this same info
+
+
+###### Snapshot
+
+![alt tag](https://raw.github.com/jitendra-1217/devmag_/master/public/images/comment_section.png)
